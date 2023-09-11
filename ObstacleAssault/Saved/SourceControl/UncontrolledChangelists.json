@@ -5,7 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/MainLevel.umap"
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/MainLevel.umap",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/SCK_Casual01/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_ThirdPersonCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_ObstacleGamemode.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/SCK_Casual01/Blueprints/ThirdPersonCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Character/BP_ThirdPersonCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Gamemodes/BP_ObstacleGamemode.uasset"
 			]
 		}
 	]
