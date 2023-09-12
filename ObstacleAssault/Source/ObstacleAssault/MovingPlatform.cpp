@@ -18,7 +18,11 @@ void AMovingPlatform::BeginPlay()
 
 	MyCharacter = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 
-	SetActorLocation(FVector(MyCharacter.X, MyCharacter.Y + 170, MyCharacter.Z - 50));
+	// SetActorLocation(FVector(MyCharacter.X, MyCharacter.Y + 200, MyCharacter.Z - 50));
+
+	StartLocation = GetActorLocation();
+
+	UE_LOG(LogTemp, Display, TEXT("Your message"));
 }
 
 // Called every frame
@@ -26,9 +30,38 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector CurrentLocation = GetActorLocation();
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
 
-	CurrentLocation.X = CurrentLocation.X + 1;
+void AMovingPlatform::MovePlatform(float DeltaTime)
+{
+	if (ShouldPlatformReturn())
+	{	
+		StartLocation = StartLocation + (PlatformVelocity.GetSafeNormal() * MaxMoveDistance);
+		SetActorLocation(StartLocation);
+		PlatformVelocity = -PlatformVelocity;
+	}
+	else
+	{
+		FVector CurrentLocation = GetActorLocation();
+		CurrentLocation = CurrentLocation + (PlatformVelocity * DeltaTime);
+		SetActorLocation(CurrentLocation);
+	}
 
-	SetActorLocation(CurrentLocation);
+}
+
+void AMovingPlatform::RotatePlatform(float DeltaTime)
+{
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
+}
+
+bool AMovingPlatform::ShouldPlatformReturn() const
+{
+	return GetDistanceMoved() > MaxMoveDistance;
+}
+
+float AMovingPlatform::GetDistanceMoved() const
+{
+	return FVector::Dist(StartLocation, GetActorLocation());
 }

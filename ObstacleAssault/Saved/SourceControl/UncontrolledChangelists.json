@@ -6,12 +6,20 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/MainLevel.umap",
-				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/SCK_Casual01/Blueprints/BP_ThirdPersonCharacter.uasset",
-				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_ThirdPersonCharacter.uasset",
-				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_ObstacleGamemode.uasset",
 				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/SCK_Casual01/Blueprints/ThirdPersonCharacter.uasset",
 				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Character/BP_ThirdPersonCharacter.uasset",
-				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Gamemodes/BP_ObstacleGamemode.uasset"
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Gamemodes/BP_ObstacleGamemode.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_MovingPlatform.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Blueprints/BP_MovingPlatform.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Blueprints/MovingPlatforms/BP_MovingPlatform.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Blueprints/MovingPlatforms/BP_PushingCube.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Blueprints/MovingPlatforms/BP_MovingPillar.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Character/BP_RespawnCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Blueprints/MovingPlatforms/BP_RotatingPlatform.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/Blueprints/MovingPlatforms/BP_Sweeper.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/SCK_Casual01/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_ThirdPersonCharacter.uasset",
+				"F:/GitHub/ObstacleAssault/ObstacleAssault/Content/ObstacleGame/BP_ObstacleGamemode.uasset"
 			]
 		}
 	]
